@@ -1,5 +1,8 @@
 {
   "[python]": {
     "editor.tabSize": 2
+  },
+  "[csharp]": {
+    "editor.tabSize": 4
   }
 }
