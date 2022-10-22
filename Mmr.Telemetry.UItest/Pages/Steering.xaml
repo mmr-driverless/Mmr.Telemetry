@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mmr.Telemetry.Ui.Pages.Steering"
+             Title="Steering">
+    <VerticalStackLayout>
+        <Image
+                Source="steering.jpg"
+                SemanticProperties.Description="Clutch"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+        <Label 
+            Text="Welcome to  S T E E R I N G!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

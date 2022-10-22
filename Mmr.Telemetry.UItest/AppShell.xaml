@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Mmr.Telemetry.Ui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Mmr.Telemetry.Ui"
+    xmlns:pages="clr-namespace:Mmr.Telemetry.Ui.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+            <ShellContent
+               Title="Home"
+               Icon="dotnet_bot.png"
+               ContentTemplate="{DataTemplate local:MainPage}"
+               Route="MainPage" />
+
+            <ShellContent
+               Title="Clutch"
+               Icon="dotnet_bot.png"
+               ContentTemplate="{DataTemplate pages:Clutch}"
+               Route="Clutch" />
+
+            <ShellContent
+               Title="Brake"
+               Icon="dotnet_bot.png"
+               ContentTemplate="{DataTemplate pages:Brake}"
+               Route="Brake" />
+       
+            <ShellContent
+               Title="Steering"
+               Icon="dotnet_bot.png"
+               ContentTemplate="{DataTemplate pages:Steering}"
+               Route="Steering" />
+
+    </FlyoutItem>
+
+
+</Shell>

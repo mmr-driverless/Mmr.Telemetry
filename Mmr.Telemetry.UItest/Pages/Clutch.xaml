@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mmr.Telemetry.Ui.Pages.Clutch"
+             Title="Clutch">
+    <VerticalStackLayout>
+        <Image
+                Source="fire.jpeg"
+                SemanticProperties.Description="Clutch"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+        <Image
+                Source="stm32.jpg"
+                SemanticProperties.Description="Clutch"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+        <Label 
+            Text="Welcome to  C L U T C H!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
