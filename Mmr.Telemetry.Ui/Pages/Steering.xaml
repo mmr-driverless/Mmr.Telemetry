@@ -3,15 +3,64 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mmr.Telemetry.Ui.Pages.Steering"
              Title="Steering">
-    <VerticalStackLayout>
-        <Image
-                Source="steering.jpg"
-                SemanticProperties.Description="Clutch"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-        <Label 
-            Text="Welcome to  S T E E R I N G!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+  
+    <Grid RowSpacing="6"
+          ColumnSpacing="6">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Source="steering.jpg"
+               Grid.Row="0"
+               Grid.Column="0" 
+               Grid.ColumnSpan="2"
+               Grid.RowSpan="2"/>
+
+        <BoxView Grid.Column="2"
+                 Grid.RowSpan="2"
+                 Color="Orange"/>
+        <Label Grid.Column="2"
+               Grid.RowSpan="2"
+               Text="&#xede1; Steerig info here"
+               FontFamily="FluentRegular"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+
+        <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Color="CornflowerBlue"/>
+        <Label Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Text="&#xf49f; Important messages here"
+               FontFamily="FluentRegular"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+        
+        <BoxView Grid.Row="2"
+                 Grid.Column="2"
+                 Color="DarkBlue"/>
+        <Label Grid.Row="2"
+               Grid.Column="2"
+               Text="&#xef69; &#xe618;"
+               FontFamily="FluentRegular"
+               TextColor="Black"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+
+    </Grid>
+    
 </ContentPage>

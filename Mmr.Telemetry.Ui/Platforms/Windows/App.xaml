@@ -1,8 +1,8 @@
 ﻿<maui:MauiWinUIApplication
-    x:Class="Mmr.Telemetry.UItest.WinUI.App"
+    x:Class="Mmr.Telemetry.Ui.WinUI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maui="using:Microsoft.Maui"
-    xmlns:local="using:Mmr.Telemetry.UItest.WinUI">
+    xmlns:local="using:Mmr.Telemetry.Ui.WinUI">
 
 </maui:MauiWinUIApplication>

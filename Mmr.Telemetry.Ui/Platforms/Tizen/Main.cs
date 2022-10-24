@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace Mmr.Telemetry.UItest
+namespace Mmr.Telemetry.Ui
 {
     internal class Program : MauiApplication
     {

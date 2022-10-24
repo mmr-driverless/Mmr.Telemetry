@@ -12,10 +12,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>Mmr.Telemetry.UItest</ApplicationTitle>
+		<ApplicationTitle>Mmr.Telemetry.Ui</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.mmr.telemetry.uitest</ApplicationId>
+		<ApplicationId>com.companyname.mmr.telemetry.Ui</ApplicationId>
 		<ApplicationIdGuid>E24921CE-3CE4-4ACF-9E62-2F87D0FCCF35</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -49,6 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\FluentSystemIcons-Regular.ttf" />
 	  <None Remove="Resources\Images\brake.jpg" />
 	  <None Remove="Resources\Images\clutch.jpg" />
 	  <None Remove="Resources\Images\fire.jpeg" />
