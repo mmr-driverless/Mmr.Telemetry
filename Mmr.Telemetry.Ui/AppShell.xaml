@@ -4,36 +4,70 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Mmr.Telemetry.Ui"
-    xmlns:pages="clr-namespace:Mmr.Telemetry.Ui.Pages"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:pages="clr-namespace:Mmr.Telemetry.Ui.Pages">
 
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+    <TabBar>
+        <Tab Title="Home">
+            <Tab.Icon>
+                <FontImageSource FontFamily="FluentRegular" Glyph="&#xf480;">
+                    
+                </FontImageSource>
+            </Tab.Icon>
+            
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" 
+                      Route="Home"/>
 
-            <ShellContent
-               Title="Home"
-               Icon="dotnet_bot.png"
-               ContentTemplate="{DataTemplate local:MainPage}"
-               Route="MainPage" />
+        </Tab>
 
-            <ShellContent
-               Title="Clutch"
-               Icon="dotnet_bot.png"
-               ContentTemplate="{DataTemplate pages:Clutch}"
-               Route="Clutch" />
+        <Tab Title="Clutch">
+            <Tab.Icon>
+                <FontImageSource FontFamily="FluentRegular" Glyph="&#xf741;">
 
-            <ShellContent
-               Title="Brake"
-               Icon="dotnet_bot.png"
-               ContentTemplate="{DataTemplate pages:Brake}"
-               Route="Brake" />
-       
-            <ShellContent
-               Title="Steering"
-               Icon="dotnet_bot.png"
-               ContentTemplate="{DataTemplate pages:Steering}"
-               Route="Steering" />
+                </FontImageSource>
+            </Tab.Icon>
 
-    </FlyoutItem>
+            <ShellContent ContentTemplate="{DataTemplate pages:Clutch}" 
+                      Route="Clutch"/>
+
+        </Tab>
+
+        <Tab Title="Brake">
+            <Tab.Icon>
+                <FontImageSource FontFamily="FluentRegular" Glyph="&#xf869;">
+
+                </FontImageSource>
+            </Tab.Icon>
+
+            <ShellContent ContentTemplate="{DataTemplate pages:Brake}" 
+                      Route="Brake"/>
+
+        </Tab>
+
+        <Tab Title="Steering">
+            <Tab.Icon>
+                <FontImageSource FontFamily="FluentRegular" Glyph="&#xeb6a;">
+
+                </FontImageSource>
+            </Tab.Icon>
+
+            <ShellContent ContentTemplate="{DataTemplate pages:Steering}" 
+                      Route="Steering"/>
+
+        </Tab>
+
+        <Tab Title="Cards">
+            <Tab.Icon>
+                <FontImageSource FontFamily="FluentRegular" Glyph="&#xe701;">
+
+                </FontImageSource>
+            </Tab.Icon>
+
+            <ShellContent ContentTemplate="{DataTemplate pages:Cards}" 
+                      Route="Steering"/>
+
+        </Tab>
+    </TabBar>
+   
 
 
 </Shell>

@@ -3,13 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mmr.Telemetry.Ui.Pages.Steering"
              Title="Steering">
-  
+
     <Grid RowSpacing="6"
           ColumnSpacing="6">
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
@@ -19,40 +21,90 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Image Source="steering.jpg"
-               Grid.Row="0"
-               Grid.Column="0" 
+        <BoxView Grid.Row="0"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="2"
+                 Color="DarkBlue"/>
+        <Label Grid.Row="0"
+               Grid.Column="0"
                Grid.ColumnSpan="2"
-               Grid.RowSpan="2"/>
+               Text="&#xe9dc; Telemetry of potentiometer"
+               FontFamily="FluentRegular"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Medium"/>
 
-        <BoxView Grid.Column="2"
+        <BoxView Grid.Row="0"
+                 Grid.Column="2"
+                 Color="DarkBlue"/>
+        <Label Grid.Row="0"
+               Grid.Column="2"
+               Text="&#xf4a3; CAN messages"
+               FontFamily="FluentRegular"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Medium"/>
+
+        <Image Source="steering.jpg"
+               Grid.Row="1"
+               Grid.RowSpan="2"
+               Grid.ColumnSpan="2"/>
+
+        <BoxView Grid.Row="1"
+                 Grid.Column="2"
                  Grid.RowSpan="2"
                  Color="Orange"/>
         <Label Grid.Column="2"
                Grid.RowSpan="2"
-               Text="&#xede1; Steerig info here"
+               Text="&#xede1; All messages"
+               FontFamily="FluentRegular"
+               TextColor="Black"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Medium"/>
+
+        <BoxView Grid.Row="3"
+                 Grid.ColumnSpan="2"
+                 Color="DarkBlue"/>
+        <Label Grid.Row="3"
+               Grid.ColumnSpan="2"
+               Text="&#xf869; Error messages"
                FontFamily="FluentRegular"
                TextColor="White"
                VerticalOptions="Center"
                HorizontalOptions="Center"
                FontSize="Large"/>
 
-        <BoxView Grid.Row="2"
-                 Grid.ColumnSpan="2"
-                 Color="CornflowerBlue"/>
-        <Label Grid.Row="2"
-               Grid.ColumnSpan="2"
-               Text="&#xf49f; Important messages here"
+        <BoxView Grid.Row="3"
+                 Grid.Column="2"
+                 Color="DarkBlue"/>
+        <Label Grid.Row="3"
+               Grid.Column="2"
+               Text="&#xf4c7; Status"
                FontFamily="FluentRegular"
                TextColor="White"
                VerticalOptions="Center"
                HorizontalOptions="Center"
                FontSize="Large"/>
-        
-        <BoxView Grid.Row="2"
+
+        <BoxView Grid.Row="4"
+                 Grid.ColumnSpan="2"
+                 Color="Orange"/>
+        <Label Grid.Row="4"
+               Grid.ColumnSpan="2"
+               Text="&#xf49f; Important messages here"
+               FontFamily="FluentRegular"
+               TextColor="Black"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+
+        <BoxView Grid.Row="4"
                  Grid.Column="2"
-                 Color="DarkBlue"/>
-        <Label Grid.Row="2"
+                 Color="Orange"/>
+        <Label Grid.Row="4"
                Grid.Column="2"
                Text="&#xef69; &#xe618;"
                FontFamily="FluentRegular"

@@ -63,6 +63,9 @@
 	  <MauiXaml Update="Pages\Brake.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\Cards.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\Clutch.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
