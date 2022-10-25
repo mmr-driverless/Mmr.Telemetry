@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             xmlns:local="clr-namespace:Mmr.Telemetry.Ui.Pages"
+             x:Class="Mmr.Telemetry.Ui.Pages.ChartTests"
+             x:DataType="local:ChartTestsViewModel"
+             Title="ChartTests">
+    <lvc:CartesianChart
+        Series="{Binding Series}"
+        ZoomMode="Both">
+    </lvc:CartesianChart>
+</ContentPage>
