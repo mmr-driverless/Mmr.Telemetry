@@ -6,54 +6,103 @@
 
     <Grid RowSpacing="6"
           ColumnSpacing="6">
+        <!--Grid definition for Main Page-->
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Image Source="vincecarter.jpg"
-               Grid.Row="0"
-               Grid.Column="0" 
-               Grid.ColumnSpan="2"
-               Grid.RowSpan="2"/>
-
-        <BoxView Grid.Column="2"
-                 Grid.RowSpan="2"
-                 Color="Orange"/>
-        <Label Grid.Column="2"
-               Grid.RowSpan="2"
-               Text="&#xede1; General info here"
+        <!--Main telemetry box-->
+        <BoxView Grid.Column="0"
+                 Grid.ColumnSpan="3"
+                 Color="DarkBlue"/>
+        <Label Grid.Column="0"
+               Grid.ColumnSpan="3"
+               Text="&#xede1; General telemetry"
                FontFamily="FluentRegular"
                TextColor="White"
                VerticalOptions="Center"
                HorizontalOptions="Center"
                FontSize="Large"/>
+        <Image Source="vincecarter.jpg"
+               Grid.Row="1"
+               Grid.Column="0" 
+               Grid.ColumnSpan="3"
+               Grid.RowSpan="3"/>
 
-        <BoxView Grid.Row="2"
-                 Grid.ColumnSpan="2"
+        <!--Status light box-->
+        <BoxView Grid.Column="3"
+                 Color="DarkBlue"/>
+        <Label Grid.Column="3"
+               Text="&#xede1; Status "
+               FontFamily="FluentRegular"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Medium"/>
+        <BoxView Grid.Column="3"
+                 Grid.Row="1"
+                 Grid.RowSpan="3"
+                 Color="Black"/>
+        <VerticalStackLayout Margin ="30" 
+                             Spacing="40"
+                             HorizontalOptions="Center"
+                             Grid.Row="1"
+                             Grid.Column="3"
+                             Grid.RowSpan="2">
+            
+            <Rectangle Fill="Red"
+                   HeightRequest="100" 
+                   HorizontalOptions="Fill"/>
+            <Rectangle Fill="yellow"
+                   HeightRequest="100"
+                   HorizontalOptions="Fill"/>
+            <Rectangle Fill="green"
+                   HeightRequest="100"
+                   HorizontalOptions="Fill"/>
+            
+        </VerticalStackLayout>
+
+        <!--Message box-->
+        <BoxView Grid.Row="4"
+                 Grid.ColumnSpan="3"
                  Color="CornflowerBlue"/>
-        <Label Grid.Row="2"
-               Grid.ColumnSpan="2"
-               Text="&#xf49f; Welcome to  T E L E M E T R Y &#xf49f;"
+        
+        <VerticalStackLayout Grid.Row="4"
+                             Grid.ColumnSpan="3"
+                             Margin="50"
+                             Spacing="30">
+            <Label Text="&#xf49f; Welcome to  T E L E M E T R Y &#xf49f;"
                FontFamily="FluentRegular"
                TextColor="Black"
                VerticalOptions="Center"
                HorizontalOptions="Center"
                FontSize="Large"/>
+            <Label Text="General messages go here"
+               FontFamily="FluentRegular"
+               TextColor="Black"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Medium"/>
+        </VerticalStackLayout>
 
-        <BoxView Grid.Row="2"
-                 Grid.Column="2"
+        <!--Auxiliary box-->
+        <BoxView Grid.Row="4"
+                 Grid.Column="3"
                  Color="DarkBlue"/>
-        <Label Grid.Row="2"
-               Grid.Column="2"
+        <Label Grid.Row="4"
+               Grid.Column="3"
                Text="&#xef69; &#xe618;"
                FontFamily="FluentRegular"
                TextColor="White"
