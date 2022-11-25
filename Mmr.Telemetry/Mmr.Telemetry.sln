@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "mmr.telemetry.frontend", "Mmr.Telemetry.Frontend\mmr.telemetry.frontend.esproj", "{82C8E920-F7A7-468B-B621-31431F440417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mmr.Telemetry.Services", "Mmr.Telemetry.Services\Mmr.Telemetry.Services.csproj", "{ED9C4861-133A-48E3-AF45-B7D15924738F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82C8E920-F7A7-468B-B621-31431F440417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C8E920-F7A7-468B-B621-31431F440417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C8E920-F7A7-468B-B621-31431F440417}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{82C8E920-F7A7-468B-B621-31431F440417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C8E920-F7A7-468B-B621-31431F440417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C8E920-F7A7-468B-B621-31431F440417}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{ED9C4861-133A-48E3-AF45-B7D15924738F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9C4861-133A-48E3-AF45-B7D15924738F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9C4861-133A-48E3-AF45-B7D15924738F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9C4861-133A-48E3-AF45-B7D15924738F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {653C7E34-26F1-4BAF-919D-015B1386745D}
+	EndGlobalSection
+EndGlobal
