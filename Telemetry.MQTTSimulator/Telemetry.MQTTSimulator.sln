@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.MQTTSimulator", "Telemetry.MQTTSimulator.csproj", "{D1FA5473-391A-4951-997A-B0209572D054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telemetry.MQTTService", "..\Telemetry.MQTTService\Telemetry.MQTTService.csproj", "{0767C0D0-F82F-42A6-92EC-0E3E72122C47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1FA5473-391A-4951-997A-B0209572D054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1FA5473-391A-4951-997A-B0209572D054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1FA5473-391A-4951-997A-B0209572D054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1FA5473-391A-4951-997A-B0209572D054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0767C0D0-F82F-42A6-92EC-0E3E72122C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0767C0D0-F82F-42A6-92EC-0E3E72122C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0767C0D0-F82F-42A6-92EC-0E3E72122C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0767C0D0-F82F-42A6-92EC-0E3E72122C47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B53CB01-F7D2-4439-A815-7C112CF0AB54}
+	EndGlobalSection
+EndGlobal
