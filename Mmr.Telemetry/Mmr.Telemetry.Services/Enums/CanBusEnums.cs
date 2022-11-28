@@ -28,6 +28,7 @@
         ControlSignal,
         Steering,
         Brake,
-        Logging
+        Logging,
+        Unknown
     }
 }
