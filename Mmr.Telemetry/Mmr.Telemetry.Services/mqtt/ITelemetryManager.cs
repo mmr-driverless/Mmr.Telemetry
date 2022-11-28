@@ -3,6 +3,6 @@
     public interface ITelemetryManager
     {
         public List<Data.Telemetry> Telemetries { get; set; }
-        public ITelemetryFetcher TelemetryFetcher { get; set; }
+        public void AddTelemetry(Data.RawTelemetry newTelemetry);
     }
 }
